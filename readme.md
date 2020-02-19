@@ -7,8 +7,8 @@ and that go well together.
 #### Installation
 `npm i flat-colors-js`  
 then import in your project  ex. in react
-`import { getColor,getPalette } from 'npm i flat-colors-js'`
-or  in node
+`import { getColor,getPalette } from 'npm i flat-colors-js'`  
+or  in node  
 `const flatColorsJs = require("flat-colors-js")`
 
 #### Generate a color 
