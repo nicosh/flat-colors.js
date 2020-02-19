@@ -5,7 +5,9 @@ and that go well together.
 
 ### Usage
 #### Installation
-
+`npm i flat_colors.js`  
+then import in your project  
+`import { getColor,getPalette } from 'flat-colors.js'`
 #### Generate a color 
 `getColor(palette,index,rgb)`  
 return a random (or not) color, it has 3 optional params:   
