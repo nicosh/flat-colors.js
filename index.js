@@ -79,4 +79,8 @@ const getPalette = (palette=false)=>{
     return palette ? map[palette] : flatten()
 }
 
-export {getColor, getPalette}
+
+(function(exports){
+exports.getColor = getColor
+exports.getPalette = getPalette
+})(typeof exports === 'undefined'? this['flat-colors-js']={}: exports);
