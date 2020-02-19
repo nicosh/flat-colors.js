@@ -79,3 +79,4 @@ const getPalette = (palette=false)=>{
     return palette ? map[palette] : flatten()
 }
 
+export {getColor, getPalette}
