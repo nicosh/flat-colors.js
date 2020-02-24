@@ -1,6 +1,6 @@
 Simple utility to generate flat colors, colors are taken from : https://flatuicolors.com/
 ### Why?
-sometimes, for example when generating dynamic charts without  knowing the number of items, is usefull to generate aesthetically-pleasing colors
+sometimes, for example when generating dynamic charts without  knowing the number of items, is useful to generate aesthetically-pleasing colors
 and that go well together.
 
 ### Usage
