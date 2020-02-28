@@ -31,33 +31,31 @@ const map = {
     frensh_palette : fr
 }
 
-const flatten = ()=>{
-    return [
-        ...def,
-        ...ger,
-        ...es,
-        ...au,
-        ...ru,
-        ...us,
-        ...cn,
-        ...gb,
-        ...nl,
-        ...tr,
-        ...ind,
-        ...ca,
-        ...se,
-        ...fr,
-    ];
-}
+const flatten = [
+    ...def,
+    ...ger,
+    ...es,
+    ...au,
+    ...ru,
+    ...us,
+    ...cn,
+    ...gb,
+    ...nl,
+    ...tr,
+    ...ind,
+    ...ca,
+    ...se,
+    ...fr
+]
 
 const  hexToRgb = (hex)=> {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     let string = result ? `rgb(${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[2], 16)})` : null
     return string
 }
 
 const selectColorFromAll = (i=false)=>{
-    let flatArray = flatten()
+    let flatArray = flatten
     let index = i ? i : Math.floor(Math.random() * flatArray.length) 
     let theIndex = i && i > flatArray.length ?  (i%flatArray.length)-1 : index // restart from zero  if index is greater than palette length
     return flatArray[theIndex].hex
@@ -76,7 +74,7 @@ const getColor = (palette=false,index=false,rgb=false)=>{
 }
 
 const getPalette = (palette=false)=>{
-    return palette ? map[palette] : flatten()
+    return palette ? map[palette] : flatten
 }
 
 
