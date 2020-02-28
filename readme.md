@@ -1,3 +1,5 @@
+![NPM](https://img.shields.io/npm/l/flat-colors-js) ![npm](https://img.shields.io/npm/v/flat-colors-js)  ![npm](https://img.shields.io/npm/dt/flat-colors-js)   
+
 Simple utility to generate flat colors, colors are taken from : https://flatuicolors.com/
 ### Why?
 sometimes, for example when generating dynamic charts without  knowing the number of items, is useful to generate aesthetically-pleasing colors
