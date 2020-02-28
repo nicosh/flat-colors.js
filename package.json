@@ -1,6 +1,6 @@
 {
   "name": "flat-colors-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple utility to generate flat colors in the browser, colors taken from : https://flatuicolors.com/",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "colors"
   ],
   "author": "nicosh",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nicosh/flat-colors.js/issues"
   },

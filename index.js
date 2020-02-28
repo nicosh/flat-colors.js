@@ -79,15 +79,5 @@ const getPalette = (palette=false)=>{
     return palette ? map[palette] : flatten()
 }
 
-if (typeof exports !== 'undefined') {
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = getColor;
-      exports = module.exports = getPalette;
-    }
-    exports.getColor = getColor;
-    exports.getPalette = getPalette;
 
-  } else {
-    root['getColor'] = getColor;
-    root['getPalette'] = getPalette;
-  }
+module.exports = {getColor,getPalette};

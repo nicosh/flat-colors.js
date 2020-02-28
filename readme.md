@@ -6,10 +6,12 @@ and that go well together.
 ### Usage
 #### Installation
 `npm i flat-colors-js`  
+
 then import in your project  ex. in react  
 `import { getColor,getPalette } from 'flat-colors-js'`  
+
 or  in node  
-`const flatColorsJs = require("flat-colors-js")`
+`const {getColor,getPalette} = require("flat-colors-js")`
 
 #### Generate a color 
 `getColor(palette,index,rgb)` return a random (or not) color, it has 3 optional params:   
