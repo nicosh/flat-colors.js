@@ -61,8 +61,14 @@ const selectColorFromAll = (i=false)=>{
     return flatArray[theIndex].hex
 }
 
+const getColorFromMultiplePalettes = (array)=>{
+    return array.reduce((acc,el) => {
+        return [...acc,...map[el]]
+    },[])
+}
+
 const selectColorFromPalette = (palette,i=false)=>{
-    let flatArray = map[palette]
+    let flatArray = Array.isArray(palette) ? getColorFromMultiplePalettes(palette) : map[palette]
     let index = i ? i : Math.floor(Math.random() * flatArray.length) 
     let theIndex = i && i > flatArray.length ?  (i%flatArray.length)-1 : index // restart from zero  if index is greater than palette length
     return flatArray[theIndex].hex
